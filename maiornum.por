@@ -1,24 +1,31 @@
-programa
+programa {
+  funcao inicio() {
+    
+    real numero1
+    real numero2
+    real numero3
+    real resultado
 
-{
-	funcao inicio()
-	{
-		real a
-		real b
-		real c
-		real maior
-		escreva("Escreva três números! \n")
-		leia (a)
-		leia (b)
-		leia (c)
- 
-		se (a > b)
-			maior = a
-		senao
-			maior = b
- 
-		se (maior < c)
-			maior = c
-		escreva("O maior numero escrito é \n", maior)
-	}
+    escreva("Digite o primeiro nÃºmero: ")
+    leia(numero1)
+
+    escreva("Digite o segundo nÃºmero: ")
+    leia(numero2)
+
+    escreva("Digite o terceiro nÃºmero: ")
+    leia(numero3)
+
+    se (numero1 > numero2)
+      resultado = numero1
+
+    senao
+
+      resultado = numero2
+
+    se (resultado < numero3)
+      resultado = numero3
+    escreva("\nO maior nÃºmero Ã© o: ", resultado)
+
+
+  }
 }
